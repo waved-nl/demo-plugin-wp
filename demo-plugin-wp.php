@@ -8,3 +8,12 @@
  * Author URI: https://waved.nl
  * License: GPL2
  */
+
+if( ! class_exists( 'Smashing_Updater' ) ){
+	include_once( plugin_dir_path( __FILE__ ) . 'updater.php' );
+}
+
+$updater = new Smashing_Updater( __FILE__ );
+$updater->set_username( 'waved-nl' );
+$updater->set_repository( 'demo-plugin-wp' );
+$updater->initialize();
