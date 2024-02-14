@@ -123,12 +123,8 @@ class Smashing_Updater {
 				$plugin = array(
 					'name'				=> $this->plugin["Name"],
 					'slug'				=> $this->basename,
-					'requires'			=> '0.0.0',
-					'tested'			=> '0.0.0',
-					'rating'			=> '0',
-					'num_ratings'		=> '0',
-					'downloaded'		=> '0',
-					'added'				=> '2024-01-01',
+					'requires'			=> '5.2.0',
+					'tested'			=> '6.4.3',
 					'version'			=> $this->github_response['tag_name'],
 					'author'			=> $this->plugin["AuthorName"],
 					'author_profile'	=> $this->plugin["AuthorURI"],
@@ -137,7 +133,6 @@ class Smashing_Updater {
 					'short_description' => $this->plugin["Description"],
 					'sections'			=> array(
 					    'Description'	=> $this->plugin["Description"],
-					    'Updates'		=> $this->github_response['body'],
 					),
                 'download_link' => $this->github_response['zipball_url']
 				);
